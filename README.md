@@ -24,7 +24,7 @@ audit outputs, model results, and the compiled non-spatial analytical dataset.
 
 ## Repository structure
 
-london-betting-shops-theft/
+```london-betting-shops-theft/
 │
 ├── README.md
 ├── METHODOLOGY.md
