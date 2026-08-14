@@ -24,35 +24,40 @@ audit outputs, model results, and the compiled non-spatial analytical dataset.
 
 ## Repository structure
 
-```text
-.
+london-betting-shops-theft/
+│
 ├── README.md
 ├── METHODOLOGY.md
 ├── DATA_DICTIONARY.md
 ├── DATA_LICENSES.md
-├── config/
-│   └── source_metadata.csv
-├── code/
-│   ├── 00_setup.R
-│   ├── 01_prepare_police_data.R
-│   ├── 02_prepare_betting_shops.R
-│   ├── 03_prepare_context_data.R
-│   ├── 04_compile_dataset.R
-│   ├── 05_descriptive_analysis.R
-│   ├── 06_mapping.R
-│   ├── 07_main_models.R
-│   ├── 08_sensitivity_checks.R
-│   ├── 09_spatial_diagnostics.R
-│   └── 10_build_audit_report.R
+├── LICENSE
+├── london-betting-shops-theft.Rproj
+├── run_all.R
+│
+├── scripts/
+│   ├── 01_data_cleaning.R
+│   ├── 02_build_dataset.R
+│   ├── 03_descriptive_analysis.R
+│   ├── 04_main_models.R
+│   ├── 05_sensitivity_analysis.R
+│   ├── 06_spatial_diagnostics.R
+│   └── 07_maps.R
+│
 ├── data/
-│   ├── raw/
-│   ├── intermediate/
-│   └── processed/
+│   ├── processed/
+│   │   ├── crime_lsoa_2024_cleaned.csv
+│   │   ├── betting_lsoa.csv
+│   │   ├── deprivation_lsoa.csv
+│   │   ├── population_lsoa_2024.csv
+│   │   └── final_london_lsoa_dataset_cleaned.csv
+│   │
+│   └── README.md
+│
 ├── outputs/
-│   ├── audit/
-│   ├── figures/
-│   └── tables/
-└── run_all.R
+│   ├── tables/
+│   └── figures/
+│
+└── .gitignore
 ```
 
 ## Reproducing the analysis
