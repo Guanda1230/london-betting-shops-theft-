@@ -25,3 +25,18 @@ outputs/audit/*
 .DS_Store
 Thumbs.db
 
+# R temporary files
+.Rhistory
+.RData
+.Rproj.user/
+
+# Raw third-party datasets
+crime/
+data/raw/
+
+# Large spatial source files
+*.gpkg
+
+# Temporary files
+*.tmp
+~$*
